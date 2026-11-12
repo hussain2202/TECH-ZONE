@@ -1,0 +1,4 @@
+{"firestore":{"rules":"firestore.rules"},"storage":{"rules":"storage.rules"},"functions":{"source":"functions"},
+"hosting":{"public":".","ignore":["firebase.json","**/.*","functions/**","build_catalog.py","**/node_modules/**","*.rules","README.md"],
+"rewrites":[{"source":"/admin","destination":"/admin.html"}],
+"headers":[{"source":"**/*.@(jpg|png|webp|css|js)","headers":[{"key":"Cache-Control","value":"public,max-age=31536000"}]},{"source":"js/catalog.json","headers":[{"key":"Cache-Control","value":"no-cache"}]}]}}
